@@ -1,203 +1,624 @@
-<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MS GRACE MEDICAL SPA — Ιατρικό Spa, Γαλάτσι</title>
-<meta name="description" content="MS GRACE MEDICAL SPA — ιατρικό spa με πρωτόκολλο: μέτρηση, θεραπεία, επανέλεγχος. Γαλάτσι.">
-<meta name="theme-color" content="#2A211D">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"MS GRACE MEDICAL SPA","address":{"@type":"PostalAddress","addressLocality":"Γαλάτσι","addressCountry":"GR"}}</script>
-<style>:root{--ink:#2A211D;--paper:#FAF7F2;--accent:#A8836C;--accent2:#C9A88E;--soft:#F0E8E0;--line:color-mix(in srgb,var(--ink) 12%,transparent);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Karla',system-ui,sans-serif;--mono:'Karla',sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-weight:300}
+<!doctype html>
+<html lang="el"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MS GRACE MEDICAL SPA — Κέντρο Αισθητικής — Ιατρικό Spa</title>
+<meta name="description" content="MS GRACE MEDICAL SPA, Κέντρο Αισθητικής — Ιατρικό Spa. Σολωμού Διονυσίου 17Γ, Άνω Δροσιά 145 72. Τηλέφωνο 2108134670.">
+<meta name="theme-color" content="hsl(268 10% 12%)">
+<meta property="og:title" content="MS GRACE MEDICAL SPA — Κέντρο Αισθητικής — Ιατρικό Spa">
+<meta property="og:description" content="Ιατρικό spa με πρωτόκολλο: μέτρηση, θεραπεία, επανέλεγχος. Κάθε συνεδρία καταγράφεται και συγκρίνεται με την προηγούμενη.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230D9488'/><text x='32' y='45' font-size='30' text-anchor='middle' fill='%23FFFFFF' font-family='serif'>M</text></svg>">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Physician","name":"MS GRACE MEDICAL SPA","medicalSpecialty":"Κέντρο Αισθητικής — Ιατρικό Spa","address":{"@type":"PostalAddress","streetAddress":"Σολωμού Διονυσίου 17Γ, Άνω Δροσιά 145 72","addressCountry":"GR"},"telephone":"2108134670"}</script>
+<style>
+/* ═══════════ PREMIUM REFERENCE LAYER ═══════════ */
+:root{
+  --r-sm:4px; --r-md:8px; --r-lg:14px; --r-xl:20px; --r-2xl:26px; --r-pill:999px;
+  /* Σκιές δύο επιπέδων — από rodis: κοντινή καθαρή + μακρινή χρωματισμένη */
+  --sh-1:0 1px 2px color-mix(in srgb,var(--ink) 6%,transparent),0 6px 18px -10px color-mix(in srgb,var(--ink) 22%,transparent);
+  --sh-2:0 2px 6px color-mix(in srgb,var(--ink) 7%,transparent),0 24px 56px -24px color-mix(in srgb,var(--ink) 38%,transparent);
+  --sh-3:0 30px 70px -20px color-mix(in srgb,var(--accent) 32%,transparent);
+  --max:1160px;
+}
+
+/* ── Τυπογραφία: optical details ── */
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+body{font-feature-settings:"ss01","cv11","kern","liga";line-height:1.72}
+h1,h2,h3,h4{letter-spacing:-0.015em;text-wrap:balance;font-weight:500}
+
+/* ΑΝΤΙΘΕΣΗ ΚΛΙΜΑΚΑΣ: τεράστιο display vs μικρο-ετικέτα. Αυτό κάνει τη διαφορά. */
+h1{
+  font-size:clamp(2.9rem,7.2vw,5.6rem);
+  line-height:0.98;
+  letter-spacing:-0.035em;
+  font-weight:400;
+  font-feature-settings:"dlig","kern";
+}
+h2{font-size:clamp(1.9rem,3.8vw,3rem);line-height:1.08;letter-spacing:-0.022em;font-weight:400}
+h3{line-height:1.22;font-weight:500}
+p{text-wrap:pretty;max-width:66ch}
+
+/* Σερίφ italic για έμφαση μέσα στον τίτλο — editorial κίνηση */
+em,.accent-serif,h1 em{
+  font-family:var(--disp,Georgia),serif;font-style:italic;font-weight:400;letter-spacing:-0.012em;
+}
+
+/* Eyebrow: 0.75rem / 500 / 0.22em / uppercase — από papargyri */
+.kicker,.eyebrow,.sub,.kind,.col-h{
+  font-size:0.7rem;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;
+  color:var(--accent);opacity:.9;
+}
+
+/* ── Κουμπιά: pill ή radius-lg, σκιά, micro-interaction ── */
+.btn,.btn-solid,.btn-ghost{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55em;
+  padding:0.86em 1.7em;border-radius:var(--r-pill);
+  font-size:0.92rem;font-weight:500;letter-spacing:0.005em;
+  transition:transform .32s cubic-bezier(.2,.8,.2,1),box-shadow .32s,background .3s,color .3s,border-color .3s;
+  will-change:transform;
+}
+.btn-solid{background:var(--accent);color:var(--paper);box-shadow:var(--sh-1)}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:var(--sh-2)}
+.btn-ghost{border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+
+/* ── Κάρτες: hairline + σκιά, ΟΧΙ βαριά περιγράμματα ── */
+.card,.svc,.mini,.tl,.quote{
+  background:var(--paper);
+  border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);
+  border-radius:var(--r-xl);
+  box-shadow:var(--sh-1);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,border-color .35s;
+}
+.card:hover,.svc:hover,.mini:hover{transform:translateY(-3px);box-shadow:var(--sh-2);border-color:color-mix(in srgb,var(--accent) 22%,transparent)}
+
+/* ── Φωτογραφίες: κάδρο, σκιά, ζεστή επεξεργασία ── */
+img{border-radius:var(--r-lg)}
+figure,figure img{border-radius:var(--r-xl);overflow:hidden}
+.stat .pic,.heroimg,.split-img,.pic{box-shadow:var(--sh-2);border-radius:var(--r-2xl);overflow:hidden}
+.cover,.bleed{box-shadow:inset 0 -80px 120px -60px color-mix(in srgb,var(--ink) 70%,transparent)}
+.g-item{border-radius:var(--r-md);overflow:hidden;box-shadow:var(--sh-1);transition:transform .4s,box-shadow .4s}
+.g-item:hover{box-shadow:var(--sh-2);transform:translateY(-2px)}
+.gallery{gap:10px}
+
+/* ── Ενότητες: γενναιόδωρη ανάσα (+35% έναντι πριν) ── */
+section{padding-block:clamp(80px,10vw,148px)}
+section.tight{padding-block:clamp(48px,6vw,84px)}
+.wrap{max-width:var(--max);padding-inline:clamp(1.5rem,5vw,3rem);margin-inline:auto}
+
+/* Αέρας μέσα στις λίστες/γραμμές — η πυκνότητα σκοτώνει την αίσθηση */
+.row{padding-block:clamp(26px,3vw,38px) !important}
+.trow{padding-block:clamp(18px,2vw,26px) !important}
+.witem{padding-block:clamp(26px,3vw,36px) !important}
+.services p,.svc p,.mini p{line-height:1.68}
+
+/* ── Φωτογραφίες: ενιαίο color grade — μοιάζουν να ανήκουν μαζί ── */
+img{filter:saturate(0.92) contrast(1.04) brightness(1.01)}
+.stat .pic img,.heroimg img,.split-img img,.pic img,.cover img,.bleed img{
+  filter:saturate(0.94) contrast(1.05) brightness(1.02);
+}
+.g-item img,.mosaic img,.tile img{filter:saturate(0.9) contrast(1.06)}
+
+/* ── Διαχωριστικά: λεπτά, με αέρα ── */
+hr,.rule{height:1px;border:0;background:color-mix(in srgb,var(--ink) 9%,transparent);margin-block:0}
+
+/* ── Ζώνη στοιχείων ── */
+.idbar{border-top:1px solid color-mix(in srgb,var(--ink) 9%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 9%,transparent)}
+.idbar div{border-color:color-mix(in srgb,var(--ink) 9%,transparent)}
+.idbar b{font-size:0.7rem;letter-spacing:0.2em;color:var(--accent);opacity:.85}
+
+/* ── Μαρκίζα: καθαρή, με fade στα άκρα ── */
+.marquee{
+  border-top:1px solid color-mix(in srgb,var(--ink) 9%,transparent);
+  border-bottom:1px solid color-mix(in srgb,var(--ink) 9%,transparent);
+  padding-block:16px;background:color-mix(in srgb,var(--soft) 60%,var(--paper));
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+}
+.marquee-track{font-size:0.72rem;letter-spacing:0.22em;font-weight:500;gap:52px}
+
+/* ── Counters: ήσυχοι, τυπογραφικοί ── */
+.counters{border-radius:var(--r-xl);overflow:hidden;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);box-shadow:var(--sh-1)}
+.counter b{font-size:clamp(1.7rem,3vw,2.4rem);letter-spacing:-0.03em;font-weight:400}
+.counter span{font-size:0.68rem;letter-spacing:0.2em;opacity:.65}
+
+/* ── Μαρτυρίες: χωρίς κουτί, με ραφινάτο εισαγωγικό ── */
+.quote{border-top:1px solid color-mix(in srgb,var(--ink) 9%,transparent);border-inline:0;border-bottom:0;border-radius:0;box-shadow:none;background:transparent}
+.quote blockquote{font-size:1.1rem;line-height:1.55;letter-spacing:-0.008em}
+.quote blockquote::before{content:'\201C';font-family:var(--disp,Georgia),serif;font-size:2.6rem;line-height:0;position:relative;top:.35em;margin-right:.08em;color:var(--accent);opacity:.55}
+
+/* ── FAQ: καθαρό accordion ── */
+details{border-top:1px solid color-mix(in srgb,var(--ink) 9%,transparent)}
+details:last-of-type{border-bottom:1px solid color-mix(in srgb,var(--ink) 9%,transparent)}
+summary{padding-block:18px;cursor:pointer;font-size:1.02rem}
+summary::after{color:var(--accent);font-size:1.15rem;font-weight:300}
+details p{padding-bottom:18px;max-width:66ch}
+
+/* ── Focus & επιλογή κειμένου: λεπτομέρειες που νιώθονται ── */
+::selection{background:color-mix(in srgb,var(--accent) 22%,transparent);color:var(--ink)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:var(--r-sm)}
+
+/* ── Scrollbar διακριτικό (desktop) ── */
+@media(min-width:900px){
+  *{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--ink) 20%,transparent) transparent}
+}
+
+/* ── Mobile: ροή και ανάσα ── */
+@media(max-width:700px){
+  h1{font-size:clamp(2.1rem,9vw,2.9rem)}
+  section{padding-block:48px}
+  .btn,.btn-solid,.btn-ghost{padding:0.82em 1.5em}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  .card:hover,.svc:hover,.mini:hover,.btn-solid:hover,.g-item:hover{transform:none}
+}
+
+:root{--ink:hsl(268 10% 12%);--paper:hsl(272 97% 97%);--accent:hsl(264 36% 40%);--accent2:hsl(277 16% 22%);--soft:hsl(272 24% 92%);--disp:Lora;--body:Work Sans}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body),system-ui,sans-serif;line-height:1.72;overflow-x:hidden}
 img{display:block;max-width:100%}
-.wrap{width:min(1240px,92vw);margin:0 auto}
-h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;margin:0;line-height:1.05}
-h2{font-size:clamp(2rem,4vw,3.4rem)}
-p{margin:0}
-.kicker{font-family:var(--mono);font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);display:inline-block}
-.lede{font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.68;color:color-mix(in srgb,var(--ink) 78%,transparent)}
-section{padding:clamp(70px,9vw,130px) 0;position:relative}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;text-decoration:none;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);color:var(--ink);transition:.3s;background:transparent;cursor:pointer}
-.btn:hover{background:var(--ink);color:var(--paper);transform:translateY(-4px)}
-.btn-solid{background:var(--ink);color:var(--paper)}
-.btn-solid:hover{background:var(--accent);border-color:var(--accent)}
-.burger{display:none;width:42px;height:42px;border:1px solid var(--line);background:transparent;cursor:pointer;position:relative}
-.burger span,.burger span::before,.burger span::after{position:absolute;left:50%;transform:translateX(-50%);width:18px;height:1px;background:var(--ink);content:'';transition:.3s}
-.burger span{top:50%}.burger span::before{top:-6px}.burger span::after{top:6px}
-.burger[aria-expanded="true"] span{background:transparent}
-.burger[aria-expanded="true"] span::before{transform:translate(-50%,6px) rotate(45deg)}
-.burger[aria-expanded="true"] span::after{transform:translate(-50%,-6px) rotate(-45deg)}
-.mobile-drawer{position:fixed;inset:70px 0 auto;z-index:59;background:var(--paper);display:none;flex-direction:column;padding:8px 5vw 28px;border-bottom:1px solid var(--line)}
-.mobile-drawer.on{display:flex}
-.mobile-drawer a{text-decoration:none;color:var(--ink);padding:15px 0;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase}
-@media(max-width:900px){.burger{display:flex}}
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
-.reveal.in{opacity:1;transform:none}
-.stagger>*{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.22,.61,.36,1),transform .6s cubic-bezier(.22,.61,.36,1)}
-.stagger.in>*{opacity:1;transform:none}
-.stagger.in>*:nth-child(1){transition-delay:0ms}.stagger.in>*:nth-child(2){transition-delay:80ms}
-.stagger.in>*:nth-child(3){transition-delay:160ms}.stagger.in>*:nth-child(4){transition-delay:240ms}
-.stagger.in>*:nth-child(5){transition-delay:320ms}.stagger.in>*:nth-child(6){transition-delay:400ms}
-footer{background:var(--ink);color:color-mix(in srgb,var(--paper) 68%,transparent);padding:56px 0 30px}
-.frow{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;padding-bottom:40px}
-@media(max-width:800px){.frow{grid-template-columns:1fr}}
-footer h4{color:var(--paper);font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px;font-weight:400}
-footer a{color:inherit;text-decoration:none;display:block;padding:5px 0;font-size:.9rem}
-footer a:hover{color:var(--accent2)}
-.fbot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:24px;border-top:1px solid color-mix(in srgb,var(--paper) 12%,transparent);font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase}
-.lb{position:fixed;inset:0;background:color-mix(in srgb,var(--ink) 96%,transparent);display:none;place-items:center;z-index:95;padding:24px}
-.lb.on{display:grid}
-.lb img{max-height:88vh;max-width:94vw}
-.lb button{position:absolute;top:18px;right:24px;background:none;border:0;color:var(--paper);font-size:2rem;cursor:pointer}
-.callbar{position:fixed;bottom:0;left:0;right:0;z-index:70;display:none;background:var(--accent);color:var(--paper);text-align:center;padding:15px;text-decoration:none;font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase}
-@media(max-width:900px){.callbar{display:block}body{padding-bottom:52px}}
-details{border-bottom:1px solid var(--line);padding:24px 0}
-summary{cursor:pointer;font-family:var(--serif);font-size:clamp(1.05rem,1.6vw,1.3rem);list-style:none;display:flex;justify-content:space-between;gap:20px}
+h1,h2,h3,h4{font-family:var(--disp),Georgia,serif;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.4rem,5.4vw,4.4rem);line-height:1.03;letter-spacing:-.028em;font-weight:400}
+h2{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;letter-spacing:-.02em;font-weight:400}
+h3{font-size:1.06rem;line-height:1.3;font-weight:500}
+p{margin:0;text-wrap:pretty}
+.container{width:min(1240px,92vw);margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.7rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+.eyebrow::before{content:'';width:22px;height:1px;background:currentColor;opacity:.6}
+.lead{font-size:1.05rem;color:color-mix(in srgb,var(--ink) 70%,transparent);max-width:54ch}
+.it{font-family:var(--disp),Georgia,serif;font-style:italic;font-weight:400}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:90;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid color-mix(in srgb,var(--ink) 7%,transparent);transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 4px 24px -16px color-mix(in srgb,var(--ink) 40%,transparent)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 0}
+.brand{font-family:var(--disp),serif;font-size:1.08rem;color:var(--ink);text-decoration:none}
+.nav-links{display:flex;gap:26px;font-size:.86rem}
+.nav-links a{color:color-mix(in srgb,var(--ink) 70%,transparent);text-decoration:none;position:relative;padding-bottom:3px;transition:color .25s}
+.nav-links a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--paper);text-decoration:none;padding:11px 20px;border-radius:999px;font-size:.85rem;font-weight:500;box-shadow:var(--sh-1)}
+.burger{display:none;width:44px;height:44px;border:1px solid color-mix(in srgb,var(--ink) 18%,transparent);background:none;border-radius:12px;cursor:pointer;position:relative}
+.burger span,.burger span::before,.burger span::after{display:block;width:17px;height:1.5px;background:var(--ink);content:'';position:absolute;left:8px;transition:transform .3s,opacity .2s}
+.burger span{top:21px}
+.burger span::before{top:-6px}
+.burger span::after{top:6px}
+@media(max-width:900px){.nav-links,.nav-cta{display:none}.burger{display:block}}
+
+/* HERO */
+.hero{padding:clamp(40px,5vw,80px) 0 clamp(56px,7vw,110px);position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;pointer-events:none;opacity:.55;background:radial-gradient(ellipse 60% 50% at 78% 30%,color-mix(in srgb,var(--soft) 92%,transparent),transparent 70%)}
+.hero-in{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,5vw,72px);align-items:center;position:relative}
+.hero h1{margin-bottom:24px}
+.hero .lead{margin-bottom:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.88em 1.8em;border-radius:999px;font-size:.92rem;font-weight:500;text-decoration:none;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s,background .3s,color .3s,border-color .3s}
+.btn-solid{background:var(--accent);color:var(--paper);box-shadow:var(--sh-1)}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{border:1px solid color-mix(in srgb,var(--ink) 20%,transparent);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.hero-media{position:relative;border-radius:var(--r-2xl);overflow:hidden;box-shadow:var(--sh-2);aspect-ratio:4/5;max-height:620px}
+.hero-media img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.hero-media::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 8%,transparent);border-radius:inherit;pointer-events:none}
+.hero-badge{position:absolute;left:18px;bottom:18px;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);border-radius:var(--r-lg);padding:12px 16px;font-size:.76rem;box-shadow:var(--sh-1);display:flex;align-items:center;gap:9px}
+.hero-badge svg{width:16px;height:16px;color:var(--accent);flex:0 0 16px}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr}.hero-media{aspect-ratio:16/10;order:-1;max-height:340px}}
+
+/* MARQUEE */
+.marquee{overflow:hidden;padding:15px 0;border-top:1px solid color-mix(in srgb,var(--ink) 8%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent);background:color-mix(in srgb,var(--soft) 65%,var(--paper));mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.marquee-track{display:flex;gap:52px;white-space:nowrap;animation:mq 40s linear infinite;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:color-mix(in srgb,var(--ink) 55%,transparent)}
+.marquee-track i{font-style:normal;color:var(--accent2)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.sec{padding:clamp(72px,9vw,130px) 0}
+.sec-head{max-width:64ch;margin-bottom:clamp(38px,4vw,60px)}
+.sec-head h2{margin-bottom:16px}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:clamp(14px,1.6vw,22px)}
+.svc-card{background:var(--paper);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);border-radius:var(--r-xl);padding:clamp(26px,2.6vw,34px);box-shadow:var(--sh-1);transition:transform .38s cubic-bezier(.2,.8,.2,1),box-shadow .38s,border-color .38s;position:relative;overflow:hidden}
+.svc-card::before{content:'';position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,var(--accent),transparent);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-2);border-color:color-mix(in srgb,var(--accent) 20%,transparent)}
+.svc-card:hover::before{transform:scaleX(1)}
+.icon-disk{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 9%,var(--paper));margin-bottom:20px;transition:background .35s,transform .35s}
+.icon-disk svg{width:23px;height:23px;color:var(--accent)}
+.svc-card:hover .icon-disk{background:color-mix(in srgb,var(--accent) 15%,var(--paper));transform:scale(1.06)}
+.svc-card h3{margin-bottom:10px}
+.svc-card p{font-size:.93rem;color:color-mix(in srgb,var(--ink) 66%,transparent);line-height:1.68}
+
+/* PARALLAX BAND + SLIDER */
+.pband{position:relative;min-height:clamp(440px,60vh,620px);display:flex;align-items:center;overflow:hidden;color:#fff}
+.pband-bg{position:absolute;inset:-12% 0;background-size:cover;background-position:center;will-change:transform}
+.pband-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,color-mix(in srgb,var(--ink) 90%,transparent) 0%,color-mix(in srgb,var(--ink) 64%,transparent) 55%,color-mix(in srgb,var(--ink) 28%,transparent) 100%)}
+.pband-in{position:relative;z-index:2;padding:clamp(56px,7vw,90px) 0;width:100%}
+.pband h2{color:#fff;max-width:20ch;margin-bottom:18px}
+.pband .eyebrow{color:color-mix(in srgb,var(--paper) 82%,var(--accent2))}
+.pband p{color:color-mix(in srgb,#fff 84%,transparent);max-width:48ch;font-size:1rem}
+.slider{margin-top:38px;position:relative}
+.slider-view{overflow:hidden;border-radius:var(--r-xl);cursor:grab;user-select:none}
+.slider-view:active{cursor:grabbing}
+.slider-track{display:flex;gap:16px;transition:transform .55s cubic-bezier(.2,.8,.2,1);will-change:transform}
+.slide{flex:0 0 clamp(232px,26vw,292px);background:color-mix(in srgb,#fff 11%,transparent);backdrop-filter:blur(14px);border:1px solid color-mix(in srgb,#fff 22%,transparent);border-radius:var(--r-lg);padding:24px}
+.slide .sl-n{font-family:var(--disp),serif;font-size:.8rem;color:color-mix(in srgb,#fff 64%,transparent);display:block;margin-bottom:12px}
+.slide h3{color:#fff;font-size:1rem;margin-bottom:8px}
+.slide p{font-size:.86rem;color:color-mix(in srgb,#fff 74%,transparent);line-height:1.6}
+.slider-nav{display:flex;gap:10px;margin-top:22px;align-items:center}
+.slider-btn{width:44px;height:44px;border-radius:50%;border:1px solid color-mix(in srgb,#fff 30%,transparent);background:color-mix(in srgb,#fff 9%,transparent);color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .25s,border-color .25s}
+.slider-btn:hover{background:color-mix(in srgb,#fff 20%,transparent);border-color:color-mix(in srgb,#fff 50%,transparent)}
+.slider-btn:disabled{opacity:.3;cursor:default}
+.slider-dots{display:flex;gap:7px;margin-left:8px}
+.slider-dots button{width:7px;height:7px;border-radius:999px;border:0;background:color-mix(in srgb,#fff 36%,transparent);cursor:pointer;padding:0;transition:width .3s,background .3s}
+.slider-dots button.on{width:22px;background:#fff}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(34px,5vw,74px);align-items:center}
+.about-media{position:relative}
+.about-media img{border-radius:var(--r-2xl);box-shadow:var(--sh-2);width:100%;aspect-ratio:4/5;object-fit:cover}
+.about-media::before{content:'';position:absolute;inset:auto auto -18px -18px;width:46%;height:46%;border-radius:var(--r-xl);background:color-mix(in srgb,var(--accent) 10%,var(--paper));z-index:-1}
+.about-txt h2{margin-bottom:20px}
+.checks{list-style:none;padding:0;margin:26px 0 0}
+.checks li{position:relative;padding-left:28px;margin-bottom:13px;font-size:.94rem;color:color-mix(in srgb,var(--ink) 72%,transparent)}
+.checks li::before{content:'';position:absolute;left:0;top:.45em;width:10px;height:10px;border-right:1.6px solid var(--accent);border-bottom:1.6px solid var(--accent);transform:rotate(45deg)}
+@media(max-width:900px){.about{grid-template-columns:1fr}.about-media{order:-1}.about-media img{aspect-ratio:16/10}}
+
+/* TESTIMONIALS */
+.tst{background:color-mix(in srgb,var(--soft) 55%,var(--paper))}
+.tst-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none}
+.tst-track::-webkit-scrollbar{display:none}
+.tst-card{flex:0 0 clamp(280px,34vw,400px);scroll-snap-align:start;background:var(--paper);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);border-radius:var(--r-xl);padding:clamp(24px,2.4vw,32px);box-shadow:var(--sh-1);margin:0}
+.tst-card blockquote{margin:0;font-family:var(--disp),Georgia,serif;font-size:1.08rem;line-height:1.55;color:color-mix(in srgb,var(--ink) 84%,transparent)}
+.tst-card figcaption{margin-top:16px;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2)}
+
+/* ARTICLES */
+.arts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.art{background:var(--paper);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);border-radius:var(--r-xl);padding:clamp(24px,2.4vw,30px);box-shadow:var(--sh-1);transition:transform .35s,box-shadow .35s}
+.art:hover{transform:translateY(-3px);box-shadow:var(--sh-2)}
+.art .icon-disk{width:44px;height:44px;margin-bottom:16px}
+.art .icon-disk svg{width:19px;height:19px}
+.art h3{margin-bottom:8px;font-size:1rem}
+.art p{font-size:.9rem;color:color-mix(in srgb,var(--ink) 64%,transparent)}
+
+/* FAQ */
+.faqwrap{max-width:820px;margin-inline:auto}
+details{border-bottom:1px solid color-mix(in srgb,var(--ink) 9%,transparent)}
+details:first-of-type{border-top:1px solid color-mix(in srgb,var(--ink) 9%,transparent)}
+summary{list-style:none;cursor:pointer;padding:21px 0;display:flex;justify-content:space-between;align-items:center;gap:18px;font-family:var(--disp),Georgia,serif;font-size:1.04rem}
 summary::-webkit-details-marker{display:none}
-summary::after{content:'+';color:var(--accent);font-family:var(--sans)}
-details[open] summary::after{content:'−'}
-details p{margin-top:16px;color:color-mix(in srgb,var(--ink) 70%,transparent);max-width:68ch}
-@media(prefers-reduced-motion:reduce){.reveal,.stagger>*{opacity:1!important;transform:none!important;transition:none!important}}
+summary::after{content:'+';color:var(--accent);font-size:1.3rem;font-weight:300;transition:transform .3s;flex:0 0 auto}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 20px;font-size:.94rem;color:color-mix(in srgb,var(--ink) 68%,transparent);max-width:68ch}
 
-header{position:fixed;inset:0 0 auto;z-index:60;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:17px 0;gap:20px}
-.brand{text-decoration:none;color:var(--ink);font-family:var(--serif);font-size:1.2rem;letter-spacing:.1em;text-transform:uppercase}
-.nav-links{display:flex;gap:28px;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase}
-.nav-links a{text-decoration:none;color:color-mix(in srgb,var(--ink) 62%,transparent)}
-.nav-links a:hover{color:var(--accent)}
-@media(max-width:900px){.nav-links{display:none}}
-.hero{position:relative;height:100svh;min-height:620px;display:grid;align-items:center;overflow:hidden;color:var(--paper)}
-.hero .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
-.hero .slide.on{opacity:1}
-.hero .slide img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) brightness(.68)}
-.scrim{position:absolute;inset:0;background:linear-gradient(95deg,color-mix(in srgb,var(--ink) 82%,transparent) 0%,color-mix(in srgb,var(--ink) 35%,transparent) 58%,transparent 100%)}
-.hero-in{position:relative;z-index:2;width:100%;padding:100px 0 40px}
-.hero h1{font-size:clamp(2.6rem,5.6vw,5rem);line-height:1.03;font-weight:300}
-.hero h1 em{font-style:italic;color:var(--accent2)}
-.hero .lede{margin-top:24px;max-width:44ch;color:color-mix(in srgb,var(--paper) 88%,transparent)}
-.hero-cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
-.hero-cta .btn{border-color:color-mix(in srgb,var(--paper) 52%,transparent);color:var(--paper)}
-.hero-cta .btn-solid{background:var(--accent2);border-color:var(--accent2);color:var(--ink)}
-.hero-cta .btn:hover{background:var(--paper);color:var(--ink)}
-.dots{position:absolute;right:max(4vw,24px);bottom:38px;display:flex;gap:10px;z-index:3}
-.dots button{width:38px;height:2px;background:rgba(255,255,255,.35);border:0;cursor:pointer;transition:.3s}
-.dots button.on{background:var(--accent2);height:3px}
-.proto{background:var(--soft)}
-.proto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:50px}
-@media(max-width:800px){.proto-grid{grid-template-columns:1fr}}
-.step{background:var(--paper);padding:clamp(28px,3.5vw,44px);transition:.35s}
-.step:hover{transform:translateY(-4px)}
-.step b{display:block;font-family:var(--serif);font-size:2.2rem;color:var(--accent);line-height:1;font-style:italic;font-weight:300}
-.step h3{margin:16px 0 10px;font-size:1.22rem}
-.step p{font-size:.92rem;color:color-mix(in srgb,var(--ink) 70%,transparent)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
-@media(max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
-.card{background:var(--paper);border:1px solid var(--line);padding:clamp(24px,3vw,34px);transition:.35s}
-.card:hover{transform:translateY(-4px);box-shadow:0 24px 46px -34px rgba(42,33,29,.55);border-color:var(--accent2)}
-.card h3{font-size:1.28rem;margin-bottom:10px}
-.card p{font-size:.91rem;color:color-mix(in srgb,var(--ink) 70%,transparent)}
-.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:44px}
-.g-item{position:relative;overflow:hidden;border:0;padding:0;cursor:zoom-in;aspect-ratio:1;background:var(--soft)}
-.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .8s,filter .8s;filter:saturate(.85)}
-.g-item:hover img{transform:scale(1.05);filter:saturate(1)}
-@media(max-width:700px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
-.quote{background:var(--accent);color:var(--paper);text-align:center}
-.quote blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,3.2vw,2.6rem);line-height:1.3;max-width:24ch;margin:0 auto}
-.cta{background:var(--ink);color:var(--paper);text-align:center}
-.cta h2{color:var(--paper);max-width:18ch;margin:0 auto 28px}
-.cta h2 em{color:var(--accent2);font-style:italic}
-.cta .btn{border-color:var(--accent2);color:var(--accent2)}
-.cta .btn:hover{background:var(--accent2);color:var(--ink)}
-</style></head><body>
-<header><div class="wrap nav">
-  <a class="brand" href="#top">MS GRACE MEDICAL SPA</a>
-  <nav class="nav-links"><a href="#proto">Πρωτόκολλο</a><a href="#svc">Θεραπείες</a><a href="#gallery">Ο χώρος</a><a href="#faq">Απορίες</a><a href="#ep">Ραντεβού</a></nav>
-  <button class="burger" id="burger" aria-label="Μενού" aria-expanded="false"><span></span></button>
-</div></header>
-<div class="mobile-drawer" id="mdrawer"><a href="#proto">Πρωτόκολλο</a><a href="#svc">Θεραπείες</a><a href="#gallery">Ο χώρος</a><a href="#faq">Απορίες</a><a href="#ep">Ραντεβού</a></div>
+/* CTA */
+.ctasec{background:var(--ink);color:var(--paper);padding:clamp(64px,8vw,110px) 0}
+.ctasec h2{color:var(--paper);margin-bottom:16px;max-width:22ch}
+.ctasec p{color:color-mix(in srgb,var(--paper) 76%,transparent);margin-bottom:28px;max-width:50ch}
+.ctagrid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4vw,60px);align-items:center}
+.idbar{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:color-mix(in srgb,var(--paper) 16%,transparent);border-radius:var(--r-lg);overflow:hidden}
+.idbar div{background:color-mix(in srgb,var(--paper) 6%,var(--ink));padding:20px 22px}
+.idbar b{display:block;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent2);margin-bottom:7px;font-weight:500}
+.idbar span{font-size:.93rem;color:color-mix(in srgb,var(--paper) 88%,transparent)}
+@media(max-width:800px){.ctagrid{grid-template-columns:1fr}.idbar{grid-template-columns:1fr}}
 
-<div class="hero" id="top"><div class="slide on"><img src="img/medspa-u01.jpg" alt=""></div><div class="slide"><img src="img/medspa-u03.jpg" alt="" loading="lazy"></div><div class="slide"><img src="img/medspa-u05.jpg" alt="" loading="lazy"></div><div class="scrim"></div>
-  <div class="hero-in"><div class="wrap">
-    <span class="kicker" style="color:#C9A88E">Ιατρικό Spa · Γαλάτσι</span>
-    <h1 style="margin-top:16px">Θεραπεία με<br><em>πρωτόκολλο</em>, όχι υπόσχεση.</h1>
-    <p class="lede">Ιατρικό spa με πρωτόκολλο: μέτρηση, θεραπεία, επανέλεγχος. Κάθε συνεδρία καταγράφεται και συγκρίνεται με την προηγούμενη.</p>
-    <div class="hero-cta"><a class="btn btn-solid" href="#ep">Κλείστε αξιολόγηση</a><a class="btn" href="#proto">Το πρωτόκολλο</a></div>
-  </div></div>
-  <div class="dots"><button class="on" aria-label="1"></button><button aria-label="2"></button><button aria-label="3"></button></div>
-</div>
+/* FOOTER */
+footer{padding:30px 0;border-top:1px solid color-mix(in srgb,var(--ink) 9%,transparent);font-size:.8rem;color:color-mix(in srgb,var(--ink) 58%,transparent)}
+footer .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--accent2);text-decoration:none}
 
-<section class="proto" id="proto"><div class="wrap reveal">
-  <span class="kicker">Πρωτόκολλο</span>
-  <h2 style="margin-top:14px">Τρία βήματα, μετρήσιμα</h2>
-  <div class="proto-grid stagger">
-<div class="step"><b>01</b><h3>Μέτρηση</h3><p>Δερματολογική εκτίμηση και καταγραφή αφετηρίας. Φωτογραφία, υφή, τόνος.</p></div>
-<div class="step"><b>02</b><h3>Πρωτόκολλο</h3><p>Συγκεκριμένος αριθμός συνεδριών με στόχο και χρονοδιάγραμμα — γραπτώς.</p></div>
-<div class="step"><b>03</b><h3>Επανέλεγχος</h3><p>Σύγκριση με την αφετηρία. Αν δεν δουλεύει, αλλάζουμε πλάνο — δεν προσθέτουμε συνεδρίες.</p></div>
+/* REVEAL */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv[data-d="1"]{transition-delay:.07s}.rv[data-d="2"]{transition-delay:.14s}
+.rv[data-d="3"]{transition-delay:.21s}.rv[data-d="4"]{transition-delay:.28s}
+
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1!important;transform:none!important}
+  .marquee-track{animation:none}
+  *{transition:none!important}
+}
+</style>
+</head><body>
+
+<nav class="nav"><div class="container nav-in">
+  <a class="brand" href="#">MS GRACE MEDICAL SPA</a>
+  <div class="nav-links">
+    <a href="#ypiresies">Υπηρεσίες</a>
+    <a href="#iatreio">Η επιχείρηση</a>
+    <a href="#arthra">Ενημέρωση</a>
+    <a href="#erotiseis">Ερωτήσεις</a>
+  </div>
+  <a class="nav-cta" href="tel:2108134670">2108134670</a>
+  <button class="burger" aria-label="Μενού" aria-expanded="false"><span></span></button>
+</div></nav>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-in">
+    <div>
+      <span class="eyebrow">Κέντρο Αισθητικής — Ιατρικό Spa · Σολωμού Διονυσίου 17Γ</span>
+      <h1>MS GRACE MEDICAL SPA Δροσιά</h1>
+      <p class="lead">Ιατρικό spa με πρωτόκολλο: μέτρηση, θεραπεία, επανέλεγχος. Κάθε συνεδρία καταγράφεται και συγκρίνεται με την προηγούμενη.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="tel:2108134670">Κλείστε ραντεβού</a>
+        <a class="btn btn-ghost" href="#ypiresies">Δείτε τις υπηρεσίες</a>
+      </div>
+      <div class="trustrow"><span class="trust"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Σολωμού Διονυσίου 17Γ</span><span class="trust"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9.5 4a2.5 2.5 0 015 0"/><path d="M9 10h6M9 14h6"/></svg>2108134670</span><span class="trust"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9.5 12l1.8 1.8 3.4-3.4"/></svg>Κέντρο Αισθητικής — Ιατρικό Spa</span></div>
+    </div>
+    <div class="hero-media">
+      <img src="img/mp-1.jpg" alt="MS GRACE MEDICAL SPA" loading="eager" width="800" height="1000">
+      <span class="hero-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9.5 12l1.8 1.8 3.4-3.4"/></svg>Κέντρο Αισθητικής — Ιατρικό Spa</span>
+    </div>
+  </div>
+</header>
+
+<div class="marquee"><div class="marquee-track">Θεραπείες προσώπου <i>◆</i> Μικροδερμοαπόξεση <i>◆</i> Μεσοθεραπεία <i>◆</i> Αποτρίχωση laser <i>◆</i> Σύσφιξη σώματος <i>◆</i> Πρωτόκολλο φροντίδας <i>◆</i></div></div>
+
+<section class="sec" id="ypiresies"><div class="container">
+  <div class="sec-head rv">
+    <span class="eyebrow">Υπηρεσίες</span>
+    <h2>Αυτό που <span class="it">αναλαμβάνουμε</span> καλά.</h2>
+    <p class="lead">Το MS Grace λειτουργεί με λογική κλινικής, όχι περιποίησης. Πριν από κάθε θεραπεία γίνεται δερματολογική εκτίμηση. Οι συνεδρίες ακολουθούν πρωτόκολλο με συγκεκριμένους στόχους και μετρήσιμο αποτέλεσμα.</p>
+  </div>
+  <div class="svc-grid">
+    <article class="svc-card rv" data-d="1">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a5 5 0 0010 0V3"/><path d="M11 14v3a4 4 0 004 4h1"/><circle cx="18" cy="18" r="2.5"/></svg></div>
+      <h3>Θεραπείες προσώπου</h3>
+      <p>Καθαρισμός, υδροδότηση, αντιγήρανση.</p>
+    </article><article class="svc-card rv" data-d="2">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.5 12 20 12 20z"/></svg></div>
+      <h3>Μικροδερμοαπόξεση</h3>
+      <p>Με έμφαση στη σαφή επικοινωνία: τι γίνεται, γιατί και τι ακολουθεί.</p>
+    </article><article class="svc-card rv" data-d="3">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-5 3 10 2.5-5H21"/></svg></div>
+      <h3>Μεσοθεραπεία</h3>
+      <p>Κατόπιν ιατρικής εκτίμησης.</p>
+    </article><article class="svc-card rv" data-d="4">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9.5 12l1.8 1.8 3.4-3.4"/></svg></div>
+      <h3>Αποτρίχωση laser</h3>
+      <p>Διαδοχικές συνεδρίες σε πρωτόκολλο.</p>
+    </article><article class="svc-card rv" data-d="1">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9.5 4a2.5 2.5 0 015 0"/><path d="M9 10h6M9 14h6"/></svg></div>
+      <h3>Σύσφιξη σώματος</h3>
+      <p>Στοχευμένες περιοχές, μη επεμβατικά.</p>
+    </article><article class="svc-card rv" data-d="2">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></div>
+      <h3>Πρωτόκολλο φροντίδας</h3>
+      <p>Πλάνο 3–6 μηνών με μέτρηση προόδου.</p>
+    </article>
   </div>
 </div></section>
 
-<section class="svc" id="svc"><div class="wrap reveal">
-  <span class="kicker">Θεραπείες</span>
-  <h2 style="margin-top:14px">Έξι κατηγορίες</h2>
-  <div class="svc-grid stagger">
-<article class="card"><h3>Θεραπείες προσώπου</h3><p>Καθαρισμός, υδροδότηση, αντιγήρανση.</p></article>
-<article class="card"><h3>Μικροδερμοαπόξεση</h3><p>Ανανέωση υφής και τόνου.</p></article>
-<article class="card"><h3>Μεσοθεραπεία</h3><p>Κατόπιν ιατρικής εκτίμησης.</p></article>
-<article class="card"><h3>Αποτρίχωση laser</h3><p>Διαδοχικές συνεδρίες σε πρωτόκολλο.</p></article>
-<article class="card"><h3>Σύσφιξη σώματος</h3><p>Στοχευμένες περιοχές, μη επεμβατικά.</p></article>
-<article class="card"><h3>Πρωτόκολλο φροντίδας</h3><p>Πλάνο 3–6 μηνών με μέτρηση προόδου.</p></article>
+<section class="pband">
+  <div class="pband-bg" data-parallax data-speed=".18" style="background-image:url('img/mp-2.jpg')"></div>
+  <div class="container pband-in">
+    <span class="eyebrow">Διαδικασία</span>
+    <h2>Πώς δουλεύουμε <span class="it">μαζί</span></h2>
+    <p>Από την πρώτη επαφή μέχρι την ολοκλήρωση, ξέρεις σε κάθε βήμα τι ακολουθεί.</p>
+    <div class="slider" data-slider>
+      <div class="slider-view"><div class="slider-track">
+        
+        <div class="slide"><span class="sl-n">Υπηρεσία 01</span><h3>Θεραπείες προσώπου</h3><p>Καθαρισμός, υδροδότηση, αντιγήρανση.</p></div><div class="slide"><span class="sl-n">Υπηρεσία 02</span><h3>Μικροδερμοαπόξεση</h3><p>Με έμφαση στη σαφή επικοινωνία: τι γίνεται, γιατί και τι ακολουθεί.</p></div><div class="slide"><span class="sl-n">Υπηρεσία 03</span><h3>Μεσοθεραπεία</h3><p>Κατόπιν ιατρικής εκτίμησης.</p></div><div class="slide"><span class="sl-n">Υπηρεσία 04</span><h3>Αποτρίχωση laser</h3><p>Διαδοχικές συνεδρίες σε πρωτόκολλο.</p></div>
+      </div></div>
+      <div class="slider-nav">
+        <button class="slider-btn" data-prev aria-label="Προηγούμενο"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="slider-btn" data-next aria-label="Επόμενο"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+        <div class="slider-dots" role="tablist"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="iatreio"><div class="container">
+  <div class="about">
+    <div class="about-media rv"><img src="img/mp-3.jpg" alt="MS GRACE MEDICAL SPA" loading="lazy" width="800" height="1000"></div>
+    <div class="about-txt rv" data-d="1">
+      <span class="eyebrow">Η επιχείρηση</span>
+      <h2>MS GRACE MEDICAL SPA</h2>
+      <p class="lead">Το MS Grace λειτουργεί με λογική κλινικής, όχι περιποίησης. Πριν από κάθε θεραπεία γίνεται δερματολογική εκτίμηση. Οι συνεδρίες ακολουθούν πρωτόκολλο με συγκεκριμένους στόχους και μετρήσιμο αποτέλεσμα.</p>
+      <ul class="checks">
+        
+      </ul>
+    </div>
   </div>
 </div></section>
 
-<section class="gallery" id="gallery"><div class="wrap reveal">
-  <span class="kicker">Ο χώρος</span>
-  <h2 style="margin:16px 0 40px">Μια ματιά</h2>
-  <div class="gal-grid stagger"><button class="g-item" data-src="img/medspa-u07.jpg" aria-label="Φωτογραφία 1"><img src="img/medspa-u07.jpg" alt="" loading="lazy"></button><button class="g-item" data-src="img/medspa-u09.jpg" aria-label="Φωτογραφία 2"><img src="img/medspa-u09.jpg" alt="" loading="lazy"></button><button class="g-item" data-src="img/medspa-u11.jpg" aria-label="Φωτογραφία 3"><img src="img/medspa-u11.jpg" alt="" loading="lazy"></button><button class="g-item" data-src="img/medspa-u13.jpg" aria-label="Φωτογραφία 4"><img src="img/medspa-u13.jpg" alt="" loading="lazy"></button><button class="g-item" data-src="img/medspa-u15.jpg" aria-label="Φωτογραφία 5"><img src="img/medspa-u15.jpg" alt="" loading="lazy"></button><button class="g-item" data-src="img/medspa-u17.jpg" aria-label="Φωτογραφία 6"><img src="img/medspa-u17.jpg" alt="" loading="lazy"></button><button class="g-item" data-src="img/medspa-u19.jpg" aria-label="Φωτογραφία 7"><img src="img/medspa-u19.jpg" alt="" loading="lazy"></button></div>
-</div></section>
-<div class="lb" id="lb"><button aria-label="Κλείσιμο">×</button><img alt=""></div>
 
-<section class="quote"><div class="wrap">
-  <blockquote>«Δεν μετράμε μόνο το αποτέλεσμα στον καθρέφτη. Το μετράμε με φωτογραφία και αριθμό.»</blockquote>
-</div></section>
 
-<section class="faq" id="faq"><div class="wrap reveal">
-  <span class="kicker">Απορίες</span>
-  <h2 style="margin:16px 0 36px">Πριν το ραντεβού</h2>
-  <details open><summary>Χρειάζεται ιατρική εκτίμηση πριν;</summary><p>Ναι. Κάθε θεραπεία ξεκινά με δερματολογική εκτίμηση. Χωρίς αυτή δεν προτείνουμε πλάνο.</p></details>
-  <details><summary>Πόσες συνεδρίες χρειάζομαι;</summary><p>Εξαρτάται από τον στόχο. Ο αριθμός δίνεται γραπτώς μετά την αξιολόγηση, μαζί με το χρονοδιάγραμμα. Δεν προσθέτουμε συνεδρίες αν δεν υπάρχει λόγος.</p></details>
-  <details><summary>Πόσο κοστίζει;</summary><p>Το κόστος διαμορφώνεται ανάλογα με τις ανάγκες και τους στόχους κάθε περίπτωσης. Η αξιολόγηση γίνεται κατόπιν ραντεβού, με πλήρη ενημέρωση πριν από οποιαδήποτε δέσμευση.</p></details>
-  <details><summary>Υπάρχει χρόνος αποκατάστασης;</summary><p>Εξαρτάται από τη θεραπεία. Για τις περισσότερες μη επεμβατικές ισχύει επιστροφή στην καθημερινότητα την ίδια μέρα. Οι εξαιρέσεις εξηγούνται πριν.</p></details>
-</div></section>
-
-<section class="cta" id="ep"><div class="wrap">
-  <span class="kicker" style="color:#C9A88E">Ραντεβού</span>
-  <h2 style="margin-top:18px">Ξεκινήστε με<br><em>αξιολόγηση</em></h2>
-  <p style="max-width:48ch;margin:0 auto 30px;opacity:.85">Σολωμού Διονυσίου 17Γ, Άνω Δροσιά 145 72 · 2108134670</p>
-  <a class="btn" href="mailto:info@aionweb.gr">Κλείστε ραντεβού</a>
+<section class="sec" id="arthra" style="background:color-mix(in srgb,var(--soft) 40%,var(--paper))"><div class="container">
+  <div class="sec-head rv">
+    <span class="eyebrow">Ενημέρωση</span>
+    <h2>Χρήσιμα <span class="it">άρθρα</span></h2>
+  </div>
+  <div class="arts">
+    <article class="art rv" data-d="1">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9.5 4a2.5 2.5 0 015 0"/><path d="M9 10h6M9 14h6"/></svg></div>
+      <h3>Πότε χρειάζεται τακτικός έλεγχος</h3>
+      <p>Τα σημάδια που αξίζει να μη περάσεις στο «θα δω αργότερα».</p>
+    </article><article class="art rv" data-d="2">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3"/><path d="M7.5 15h9"/></svg></div>
+      <h3>Εξετάσεις: τι δείχνουν, τι όχι</h3>
+      <p>Πώς διαβάζονται τα αποτελέσματα και πότε επαναλαμβάνονται.</p>
+    </article><article class="art rv" data-d="3">
+      <div class="icon-disk"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0112 7a4 4 0 017 3.5C19 15.5 12 20 12 20z"/></svg></div>
+      <h3>Πρόληψη στην καθημερινότητα</h3>
+      <p>Μικρές αλλαγές με μετρήσιμο αποτέλεσμα στη μακροχρόνια εικόνα.</p>
+    </article>
+  </div>
 </div></section>
 
-<footer><div class="wrap frow">
-    <div><strong style="font-family:var(--serif);font-size:1.25rem">MS GRACE MEDICAL SPA</strong><p style="margin-top:10px;max-width:36ch;opacity:.6;font-size:.9rem">Κέντρο Αισθητικής — Ιατρικό Spa · Δροσιά</p></div>
-    <div><h4>Επικοινωνία</h4><a href="tel:2108134670">2108134670</a><span style="display:block;opacity:.55;font-size:.88rem;margin-top:6px">Σολωμού Διονυσίου 17Γ, Άνω Δροσιά 145 72</span></div>
-    <div><h4>Πλοήγηση</h4><a href="#proto">Πρωτόκολλο</a><a href="#svc">Θεραπείες</a><a href="#gallery">Ο χώρος</a><a href="#faq">Απορίες</a><a href="#ep">Ραντεβού</a></div>
-  </div><div class="wrap fbot"><span>© <span id="y"></span> MS GRACE MEDICAL SPA</span><span>Κατασκευή: AION Web Solutions</span></div></footer>
-<a class="callbar" href="#ep">Ραντεβού</a>
+<section class="sec" id="erotiseis"><div class="container">
+  <div class="sec-head rv" style="text-align:center;margin-inline:auto">
+    <span class="eyebrow" style="justify-content:center">Ερωτήσεις</span>
+    <h2>Συχνές <span class="it">ερωτήσεις</span></h2>
+  </div>
+  <div class="faqwrap rv">
+    <details open><summary>Πού βρίσκεστε;</summary><p>Σολωμού Διονυσίου 17Γ, Άνω Δροσιά 145 72.</p></details><details><summary>Πώς μπορώ να επικοινωνήσω;</summary><p>Τηλεφωνικά στο 210 813 4670. Μπορείτε επίσης να συμπληρώσετε τη φόρμα παρακάτω και θα επικοινωνήσουμε μαζί σας.</p></details><details><summary>Μπορώ να κλείσω ραντεβού;</summary><p>Ναι. Η επικοινωνία γίνεται τηλεφωνικά ή μέσω της φόρμας — θα επιβεβαιωθεί η διαθεσιμότητα.</p></details><details><summary>Πώς μπορώ να μάθω περισσότερα;</summary><p>Συμπληρώστε τη φόρμα επικοινωνίας παρακάτω ή καλέστε μας. Απαντάμε στις εργάσιμες ώρες.</p></details><details><summary>Χρειάζεται ραντεβού ή μπορώ να περάσω;</summary><p>Συνιστάται τηλεφωνική επικοινωνία πρώτα, ώστε να εξασφαλιστεί η διαθεσιμότητα την ώρα που σας βολεύει.</p></details>
+  </div>
+</div></section>
+
+<section class="ctasec" id="epikoinonia"><div class="container">
+  <div class="ctagrid">
+    <div>
+      <span class="eyebrow" style="color:color-mix(in srgb,var(--paper) 70%,var(--accent2))">Επικοινωνία</span>
+      <h2>Επικοινωνία</h2>
+      <p>Τηλεφωνήστε ή συμπληρώστε τα στοιχεία σας. Απαντάμε με σαφήνεια και χωρίς καθυστέρηση.</p>
+      <a class="btn btn-solid" href="tel:2108134670" style="background:var(--paper);color:var(--ink)">Καλέστε 2108134670</a>
+    </div>
+    <div class="idbar">
+      <div><b>Διεύθυνση</b><span>Σολωμού Διονυσίου 17Γ, Άνω Δροσιά 145 72</span></div>
+      <div><b>Τηλέφωνο</b><span>2108134670</span></div>
+      <div><b>Ειδικότητα</b><span>Κέντρο Αισθητικής — Ιατρικό Spa</span></div>
+      <div><b>Χάρτης</b><span><a href="https://www.google.com/maps/search/MS%20GRACE%20MEDICAL%20SPA%20%CE%A3%CE%BF%CE%BB%CF%89%CE%BC%CE%BF%CF%8D%20%CE%94%CE%B9%CE%BF%CE%BD%CF%85%CF%83%CE%AF%CE%BF%CF%85%2017%CE%93%2C%20%CE%86%CE%BD%CF%89%20%CE%94%CF%81%CE%BF%CF%83%CE%B9%CE%AC%20145%2072" target="_blank" rel="nofollow noopener" style="color:inherit;text-decoration:underline">Άνοιγμα στους χάρτες</a></span></div>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="container">
+  <span>MS GRACE MEDICAL SPA · Κέντρο Αισθητικής — Ιατρικό Spa · Σολωμού Διονυσίου 17Γ, Άνω Δροσιά 145 72</span>
+  <span>Demo — <a href="https://aionweb.gr" rel="noopener">AION Web Solutions</a></span>
+</div></footer>
+
+
 <script>
-document.getElementById('y').textContent=new Date().getFullYear();
-var bg=document.getElementById('burger'),mdw=document.getElementById('mdrawer');
-if(bg&&mdw){function mc(){bg.setAttribute('aria-expanded','false');mdw.classList.remove('on')}
-bg.addEventListener('click',function(){var o=bg.getAttribute('aria-expanded')==='true';bg.setAttribute('aria-expanded',String(!o));mdw.classList.toggle('on',!o)});
-[].slice.call(mdw.querySelectorAll('a')).forEach(function(a){a.addEventListener('click',mc)});
-window.addEventListener('resize',function(){if(window.innerWidth>900)mc()});}
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:0.08});
-[].slice.call(document.querySelectorAll('.reveal,.stagger')).forEach(function(el){io.observe(el)});
-var slides=[].slice.call(document.querySelectorAll('.slide')),dots=[].slice.call(document.querySelectorAll('.dots button')),i=0,t;
-if(slides.length>1){function go(n){slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=n;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on')}
-function loop(){t=setInterval(function(){go((i+1)%slides.length)},6500)}
-dots.forEach(function(b,k){b.addEventListener('click',function(){clearInterval(t);go(k);loop()})});loop();}
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches){window.addEventListener('scroll',function(){var y=window.scrollY;if(y<window.innerHeight)[].slice.call(document.querySelectorAll('.slide img')).forEach(function(im){im.style.transform='translateY('+(y*0.10)+'px) scale(1.03)'})},{passive:true})}
-var lb=document.getElementById('lb');
-if(lb){var li=lb.querySelector('img');document.querySelectorAll('.g-item').forEach(function(b){b.addEventListener('click',function(){li.src=b.dataset.src;lb.classList.add('on')})});lb.addEventListener('click',function(e){if(e.target!==li)lb.classList.remove('on')})}
-document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb)lb.classList.remove('on')});
-document.querySelectorAll('details').forEach(function(x){x.addEventListener('toggle',function(){if(x.open)document.querySelectorAll('details').forEach(function(o){if(o!==x)o.open=false})})});
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ── Reveal on scroll ── */
+  var rvs = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: .12, rootMargin: '0px 0px -8% 0px' });
+    rvs.forEach(function(el){ io.observe(el); });
+  } else {
+    rvs.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ── Μαρκίζα: διπλασιασμός ── */
+  document.querySelectorAll('.marquee-track').forEach(function(t){
+    if (t.dataset.dup) return;
+    t.dataset.dup = '1';
+    t.innerHTML = t.innerHTML + t.innerHTML;
+  });
+
+  /* ── Sticky nav shadow ── */
+  var nav = document.querySelector('.nav');
+  if (nav) {
+    var onScroll = function(){ nav.classList.toggle('scrolled', window.scrollY > 12); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* ── Παράλλαξη ── */
+  var pbs = [].slice.call(document.querySelectorAll('.pband-bg, [data-parallax]'));
+  if (pbs.length && !reduce) {
+    var raf = null;
+    var tick = function(){
+      var vh = window.innerHeight;
+      pbs.forEach(function(el){
+        var r = el.getBoundingClientRect();
+        if (r.bottom < -200 || r.top > vh + 200) return;
+        var speed = parseFloat(el.dataset.speed || '.14');
+        var offset = (r.top + r.height / 2 - vh / 2) * speed;
+        el.style.transform = 'translate3d(0,' + (-offset).toFixed(2) + 'px,0)';
+      });
+      raf = null;
+    };
+    window.addEventListener('scroll', function(){ if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
+    window.addEventListener('resize', tick);
+    tick();
+  }
+
+  /* ── Slider: βελάκια, dots, drag ── */
+  document.querySelectorAll('[data-slider]').forEach(function(root){
+    var view = root.querySelector('.slider-view');
+    var track = root.querySelector('.slider-track');
+    var prev = root.querySelector('[data-prev]');
+    var next = root.querySelector('[data-next]');
+    var dotsWrap = root.querySelector('.slider-dots');
+    if (!view || !track) return;
+
+    var slides = [].slice.call(track.children);
+    if (!slides.length) return;
+
+    var index = 0;
+    function stepWidth(){
+      var s = slides[0].getBoundingClientRect().width;
+      var gap = parseFloat(getComputedStyle(track).gap || '16');
+      return s + gap;
+    }
+    function perView(){
+      return Math.max(1, Math.floor(view.getBoundingClientRect().width / stepWidth()));
+    }
+    function maxIndex(){ return Math.max(0, slides.length - perView()); }
+
+    if (dotsWrap) {
+      dotsWrap.innerHTML = '';
+      for (var i = 0; i <= maxIndex(); i++) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Θέση ' + (i + 1));
+        b.addEventListener('click', (function(n){ return function(){ go(n); }; })(i));
+        dotsWrap.appendChild(b);
+      }
+    }
+
+    function render(){
+      track.style.transform = 'translate3d(' + (-index * stepWidth()) + 'px,0,0)';
+      if (prev) prev.disabled = index <= 0;
+      if (next) next.disabled = index >= maxIndex();
+      if (dotsWrap) {
+        [].slice.call(dotsWrap.children).forEach(function(d, n){ d.classList.toggle('on', n === index); });
+      }
+    }
+    function go(n){ index = Math.max(0, Math.min(n, maxIndex())); render(); }
+
+    if (prev) prev.addEventListener('click', function(){ go(index - 1); });
+    if (next) next.addEventListener('click', function(){ go(index + 1); });
+
+    // drag / swipe
+    var startX = 0, dragging = false, moved = 0;
+    view.addEventListener('pointerdown', function(e){ dragging = true; startX = e.clientX; moved = 0; track.style.transition = 'none'; });
+    window.addEventListener('pointermove', function(e){
+      if (!dragging) return;
+      moved = e.clientX - startX;
+      track.style.transform = 'translate3d(' + (-index * stepWidth() + moved) + 'px,0,0)';
+    });
+    window.addEventListener('pointerup', function(){
+      if (!dragging) return;
+      dragging = false;
+      track.style.transition = '';
+      if (Math.abs(moved) > stepWidth() * 0.18) go(index + (moved < 0 ? 1 : -1));
+      else render();
+    });
+
+    // auto-advance (απαλό)
+    if (!reduce) {
+      var timer = setInterval(function(){
+        if (document.hidden) return;
+        go(index >= maxIndex() ? 0 : index + 1);
+      }, 6500);
+      root.addEventListener('mouseenter', function(){ clearInterval(timer); });
+    }
+
+    window.addEventListener('resize', render);
+    render();
+  });
+
+  /* ── Burger: mobile drawer ── */
+  var burger = document.querySelector('.burger');
+  if (burger) {
+    burger.addEventListener('click', function(){
+      var open = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!open));
+      var drawer = document.getElementById('drawer');
+      if (drawer) drawer.classList.toggle('on', !open);
+    });
+  }
+})();
 </script>
 </body></html>
